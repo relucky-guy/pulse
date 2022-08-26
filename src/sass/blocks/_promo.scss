@@ -53,3 +53,23 @@
         }
     }
 }
+@media (max-width: 992px) {
+    .promo {
+        min-height: 500px;
+        padding: 20px 0 40px 0;
+        background-position: 15% 100%;
+        &__wrapper {
+            margin: 30px;
+        }
+        &__header {
+            font-size: 34px;
+        }
+        &__subheader {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        &__icons {
+            margin-top: 45px;
+        }
+    }
+}

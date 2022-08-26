@@ -36,3 +36,14 @@
     }
     
 }
+@media (max-width: 992px) {
+    .advantages {
+        min-height: 416px;
+        padding: 50px 0 45px ;
+        &__wrapper {
+            margin-top: 40px;
+            padding: 0 10px;
+        }
+    }
+
+}

@@ -15,7 +15,7 @@
         font-size: 16px;
     }
     &_submit {
-        width: 100%;
+        width: 300px;
         height: 55px;
         background: $main-color;
         font-size: 16px;
@@ -29,6 +29,12 @@
             height: 45px;
             font-size: 14px;
         }
+        &_submit {
+            width: 300px;
+            height: 55px;
+            background: $main-color;
+            font-size: 16px;
+        }
     }
 }
 @media (max-width: 767px) {
@@ -37,5 +43,12 @@
         width: 175px;
         height: 30px;
         font-size: 11px;
+        &_submit {
+            margin-top: 0;
+            width: 242px;
+            height: 35px;
+            background: $main-color;
+            font-size: 13px;
+        }
     }
 }

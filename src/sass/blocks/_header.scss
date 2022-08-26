@@ -42,3 +42,20 @@
         padding: 0 30px;
     }
 }
+@media (max-width: 767px) {
+    .header {
+        display: block;
+        text-align: center;
+        &__logo {
+            img {
+                width: 250px;
+            }
+        }
+        &__official {
+            display: none;
+        }
+        &__contacts {
+            display: none;
+        }
+    }
+}

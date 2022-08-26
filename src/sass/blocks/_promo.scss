@@ -73,3 +73,36 @@
         }
     }
 }
+@media (max-width: 767px) {
+    .promo {
+        min-height: 400px;
+        padding: 40px 0 40px 0;
+        background-position: 41% 100%;
+        &__header {
+            margin-top: 20px;
+            font-size: 21px;
+            line-height: 21px;
+        }
+        &__subheader {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        &__wrapper {
+            margin: 0 20px;
+            align-items: center;
+        }
+        &__icons {
+            margin-top: 20px;
+            width: 270px;
+        }
+        &__icon {
+            font-size: 12px;
+            img {
+                width: 40%;
+            }
+        }
+        &__link {
+            font-size: 12px;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1200,
-        adaptiveHeight: true,
+        adaptiveHeight: false,
         prevArrow: '<button type="button" class="slick-prev" style="outline:none;"> <img src="icons/slider/chevron-left-solid.png" alt="left"></button>',
         nextArrow: '<button type="button" type="button" class="slick-next" style="outline:none;"> <img src="icons/slider/right.svg" alt="left"></button>',
         responsive: [
@@ -10,6 +10,7 @@ $(document).ready(function(){
                 settings: {
                   dots: true,
                   arrows: false,
+                  adaptiveHeight: true,
                 }
             }
         ]

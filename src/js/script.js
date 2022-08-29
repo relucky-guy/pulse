@@ -89,9 +89,9 @@ $(document).ready(function(){
     $('form').submit(function(e) {
         e.preventDefault();
 
-        if (!$(this).valid()) {
-            return;
-        };
+        // if (!$(this).valid()) {
+        //     return;
+        // };
 
         $.ajax({
             type: "POST",

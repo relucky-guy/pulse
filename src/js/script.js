@@ -91,7 +91,7 @@ $(document).ready(function(){
 
         if (!$(this).valid()) {
             return;
-        }
+        };
 
         $.ajax({
             type: "POST",
@@ -99,6 +99,8 @@ $(document).ready(function(){
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('fast');
 
 
             $('form').trigger('reset');

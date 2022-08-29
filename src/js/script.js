@@ -50,4 +50,39 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('fast');
         })
     });
-  }); 
+
+    function valideForms(form){
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 50
+                  },
+                phone: "required",
+                email: {
+                  required: true,
+                  email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "*Пожалуйста, введите своё имя",
+                    minlength: jQuery.validator.format("*Введите минимум {0} символа!"),
+                    maxlength: jQuery.validator.format("*Допустимое значение {0} символов!")
+                  },            
+                phone: "*Пожалуйста, введите свой номер телефона",
+                email: {
+                  required: "*Пожалуйста, введите свою почту",
+                  email: "*Ваша почта должна быть введена в формате name@domain.com"
+                }
+              }
+        });
+    };
+
+    valideForms('#consultation-form');
+    valideForms('#consultation form');
+    valideForms('#order form');
+
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
+}); 

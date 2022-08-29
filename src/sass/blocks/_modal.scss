@@ -39,8 +39,38 @@
     &_mini {
         min-height: 140px;
     }
+    .error {
+        border: 1px solid red;
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+        color: red;
+    }
 }
 
 #consultation, #order, #thanks {
     display: none;
+}
+
+@media (max-width: 767px) {
+    .modal {
+        width: 292px;
+        min-height: 265px;
+        padding: 33px 10px 20px 10px;
+        border-radius: 2%;
+        &__close {
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            line-height: 21px;
+        }
+        &__subtitle {
+            font-size: 15px;
+        }
+        &__descr {
+            font-size: 11px;
+        }
+    }
 }

@@ -2,8 +2,8 @@
     margin-top: 36px;
     display: flex;
     flex-direction: column;
-    input {
-        width: 300px;
+    width: 300px;
+    input {        
         height: 50px;    
         border-radius: 5px;
         background: #FFFFFF;
@@ -25,8 +25,8 @@
 @media (max-width: 767px) {
     .feed-form {
         align-items: center;
-        input {
-            width: 242px;
+        width: 242px;
+        input {            
             height: 35px;
             margin-bottom: 10px;
             &:nth-child(3) {
